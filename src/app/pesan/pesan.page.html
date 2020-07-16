@@ -1,0 +1,51 @@
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<ion-header>
+    <ion-toolbar color="dark">
+      &nbsp;<img src="assets/icon/logo1.png" style="width: 30%; height: 30%;">
+    </ion-toolbar>
+</ion-header>
+  
+<ion-content>
+  <ion-button fill="clear"  (click)="diskripsi()"><ion-icon name="arrow-round-back" slot="start"></ion-icon>Back</ion-button>
+
+
+<ion-content>
+    <ion-card-header>
+        <ion-grid>
+            <ion-row>
+              <ion-col>
+                  <ion-list>
+                      <ion-list-header>Add Traveler For Weekdays</ion-list-header>
+                      <ion-item>
+                        <ion-label position="floating">Adult > 17th</ion-label>
+                        <ion-input type="number" [(ngModel)]="adultInput"></ion-input>
+                      </ion-item>
+                      <br>
+                      <ion-item>
+                        <ion-label position="floating">Child < 17th</ion-label>
+                        <ion-input type="number" [(ngModel)]="childInput"></ion-input>
+                      </ion-item>
+                    </ion-list>
+                    <br>
+                  <ion-item>
+                    Total Ticket Adult : {{adultInput+childInput}}
+                  </ion-item>
+
+                  <ion-item>
+                    Total Price : Rp {{adultInput*90000 + childInput*60000}}
+                  </ion-item>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <div class="ion-margin-vertical ion-text-right">
+                  <ion-button fill="outline" color="dark" name="detail" (click)="detail()">Next</ion-button>
+                </div>
+              </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-card-header>
+
+</ion-content>

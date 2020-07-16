@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button fill="clear" name="account" (click)="account()"><ion-icon name="arrow-round-back" slot="start"></ion-icon>Back</ion-button>
+
+<ion-card class="card">
+<ion-col class="ion-align-self-center" size-md="6" size-lg="5" size-xs="12">
+<div class="ion-text-center">
+  <ion-icon class="person" name="person" color="light"></ion-icon>
+  <br>
+</div>
+</ion-col>
+</ion-card>
+
+<ion-list>
+  <ion-item>
+  	<ion-icon slot="start" name="ios-contact" color="dark"></ion-icon>
+      <ion-item>
+        <ion-label color="dark" position="floating">Full Name</ion-label>
+        <ion-input color="dark"></ion-input>
+      </ion-item>
+  </ion-item>
+  <ion-item>
+  	<ion-icon slot="start" name="ios-call" color="dark"></ion-icon>
+      <ion-item>
+        <ion-label color="dark" position="floating">Phone Number</ion-label>
+        <ion-input color="dark"></ion-input>
+      </ion-item>
+  </ion-item>
+  <ion-item>
+  	<ion-icon slot="start" name="ios-mail" color="dark"></ion-icon>
+    <ion-label color="dark">&nbsp;&nbsp;&nbsp;&nbsp;{{userEmail}}</ion-label>
+    
+  </ion-item>
+  
+</ion-list>
+
+</ion-content>

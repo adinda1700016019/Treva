@@ -1,0 +1,106 @@
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style>
+    .btn1 {
+      font-size: 13px;
+      font-family: Arial;
+      background-color: white;
+      color: #43A9BA;
+    }
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td {
+      background-color: #43A9BA;
+      text-align: left;
+      padding: 8px;
+      color: white;
+    } 
+
+    th {
+      background-color: #83CBE2;
+      text-align: left;
+      padding: 8px;
+      color: white;
+    }
+
+</style>
+
+<ion-header>
+    <ion-toolbar color="dark">
+      &nbsp;<img src="assets/icon/logo1.png" style="width: 30%; height: 30%;">
+    </ion-toolbar>
+</ion-header>
+  
+  <ion-content>
+  <ion-button fill="clear" name="travel" (click)="travel()"><ion-icon name="arrow-round-back" slot="start"></ion-icon>Back</ion-button>
+
+  <ion-content>
+        <ion-card-header>
+            <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    <div><img src="assets/icon/jogjabay.PNG" style="width: 100%; height: 100%;"></div>
+                  </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-card-header>
+        <ion-card-title style="text-align: center; font-family: Arial;"><strong>Jogja Bay</strong></ion-card-title>
+        <hr>
+        <ion-card-content style="text-align: justify;" >
+        The newest and most comprehensive THEMATIC in Indonesia. With a total area of ​​7 Ha, with 19 water play rides. 
+        Jogja Bay Pirates Adventure Waterpark is the newest one water tourism park in 
+        Indonesia with a pirate theme that combines elements of Java and Europe
+        </ion-card-content>
+
+        <ion-card-header>
+            <ion-card-subtitle><strong>TICKET</strong></ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+        <div>
+            <table>
+                <tr>
+                  <th>Age</th>
+                  <th>Day Weekdays</th>
+                  <th>Price</th>
+                </tr>
+                <tr *ngFor="let item of jsonData1">
+                  <td>{{item.age}}</td>
+                  <td>{{item.day}}</td>
+                  <td>{{item.price}}</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th><button type="button" class="btn btn1 btn1" name="pesan" (click)="pesan()">Booking</button></th>
+                </tr>
+              </table>
+              <br>
+
+              <table>
+                <tr>
+                  <th>Age</th>
+                  <th>Day Weekends</th>
+                  <th>Price</th>
+                </tr>
+                <tr *ngFor="let item of jsonData2">
+                    <td>{{item.age}}</td>
+                    <td>{{item.day}}</td>
+                    <td>{{item.price}}</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th><button type="button" class="btn btn1 btn1" >Booking</button></th>
+                </tr>
+              </table>
+            </div>
+          </ion-card-content>
+<br><br><br>
+
+</ion-content>

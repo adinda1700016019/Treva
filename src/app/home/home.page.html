@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    &nbsp;<img src="assets/icon/logo1.png" style="width: 30%; height: 30%;">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+      <ion-card class="card">
+        <ion-title>
+          <br><br>
+            <h3>Hello ! Let's Go To Vacation</h3>
+        </ion-title>
+      
+        <ion-card class="card-center">
+        <ion-grid>
+          <ion-row >
+            <ion-col>
+              <div>
+                <ion-img class="imgbutton" src="assets/icon/tiket.png" (click)="travel()"></ion-img>
+                <section>
+                    <ion-button fill="outline" color="light" id="button"  (click)="travel()">
+                      <ion-text color="light">Travel Ticket</ion-text>
+                    </ion-button>
+                </section>
+              </div>
+              </ion-col>
+              
+              <ion-col>
+              <div>
+                <ion-img class="imgbutton" src="assets/icon/rute.png"  (click)="rute()"></ion-img>
+                <section>
+                    <ion-button fill="outline" color="light" id="button" (click)="rute()">
+                      <ion-text color="light">Travel Rute</ion-text>
+                    </ion-button>
+                </section>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+      </ion-card>
+      
+      
+      <br>
+      <div class="ion-margin-vertical ion-text-left">
+        <ion-item>
+          <h4>Jogja Tourism :</h4>
+        </ion-item>
+      </div>
+      <br>
+      <ion-card class="card-battom">
+      <ion-slides [options]="slideOptsOne" loop="true">
+        <ion-slide>
+          <ion-card class="card1">
+            <div class="ion-margin-vertical ion-text-center ion-text-uppercase" name="diskripsi" (click)="diskripsi()">
+              <h6>Jogja Bay</h6>
+              <img src="assets/icon/jogjabay.PNG" style="width: 90%; height: 100%; margin: auto; display: block;">
+            </div>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card class="card2">
+            <div class="ion-margin-vertical ion-text-center ion-text-uppercase" >
+              <h6>Prambanan Temple</h6>
+              <img src="assets/icon/candi.jpg" style="width: 90%; height: 100%; margin: auto; display: block;">
+            </div>
+          </ion-card>
+        </ion-slide>
+        
+        <ion-slide>
+          <ion-card class="card3">
+            <div class="ion-margin-vertical ion-text-center ion-text-uppercase">
+              <h6>Pine Forest Mangunan</h6>
+              <img src="assets/icon/pinus.jpg" style="width: 90%; height: 100%; margin: auto; display: block;">
+            </div>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+      </ion-card>
+
+</ion-content>
+

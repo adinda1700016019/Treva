@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    &nbsp;<img src="assets/icon/logo1.png" style="width: 30%; height: 30%;">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-button fill="clear" (click)="payment()"><ion-icon name="arrow-round-back" slot="start"></ion-icon>Back</ion-button>
+
+
+<ion-content>
+      <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Mandiri</ion-card-subtitle>
+            <hr color="succes">
+            <ion-card-content>
+                Jogja Bay Ticket
+            </ion-card-content>
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <section>
+                            <ion-card-content>
+                                Total Ticket :
+                             </ion-card-content>
+                        </section>
+                    </ion-col>
+                    
+                    <ion-col offset="3">
+                            <ion-card-content>
+                                : 2 People
+                            </ion-card-content>
+                    </ion-col>
+                  </ion-row>
+              </ion-grid>
+  
+              <ion-grid>
+                  <ion-row>
+                      <ion-col>
+                          <section>
+                              <ion-card-content>
+                                  Total Price :
+                               </ion-card-content>
+                          </section>
+                      </ion-col>
+                      
+                      <ion-col offset="3">
+                            <ion-card-content>
+                                : Rp 180000
+                            </ion-card-content>
+                      </ion-col>
+                    </ion-row>
+                </ion-grid>
+
+          </ion-card-header>
+      </ion-card>
+
+      <ion-card-content class="ion-margin-vertical ion-text-center" style="text-align: justify;">
+          By tapping on the following button, you have 
+          agreed to the terms and policies and privacy 
+          of TREVA
+      </ion-card-content>
+
+      <div class="ion-margin-vertical ion-text-center">
+          <ion-button fill="outline" color="dark" (click)="transaksi()">
+                Pay
+          </ion-button>
+      </div>
+
+</ion-content>

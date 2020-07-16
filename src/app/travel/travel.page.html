@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    &nbsp;<img src="assets/icon/logo1.png" style="width: 30%; height: 30%;">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-button fill="clear" (click)="home()"><ion-icon name="arrow-round-back" slot="start"></ion-icon>Back</ion-button>
+<ion-searchbar animated (ionInput)="FilterJSONData($event)"></ion-searchbar>
+<ion-content>
+
+
+    <ion-card (click)="diskripsi(id)" (click)="selectVal(item.title)" *ngFor="let item of jsonData">
+        <ion-card-header>
+            <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    <div><img src="{{item.img}}" style="width: 100%; height: 100%;"></div>
+                  </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-card-header>
+        <ion-card-title style="text-align: center;" >{{item.title}}</ion-card-title>
+        <ion-card-content style="text-align: justify;" ><ion-icon name="pin" slot="start"></ion-icon>
+          {{item.lokasi}}
+        </ion-card-content>
+      </ion-card>
+    <br><br><br><br><br><br>
+</ion-content>

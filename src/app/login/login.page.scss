@@ -1,0 +1,42 @@
+:host {
+  --ion-color-base: var(--ion-item-background, transparent);
+  --ion-color-base: var(--ion-item-background-color, transparent);
+}
+
+.person{
+  font-size: 100px;
+  margin: 20px;
+}
+
+#h4{
+  margin: 5px;
+  color: #69d2e7;
+}
+
+a{
+  color: #69d2e7;
+}
+
+.google {
+  background-color:#fff;
+  border:1px solid red;    
+  height:40px;
+  width:40px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  padding: 10px;
+}
+
+.whatsapp {
+  background-color:#fff;
+  border:1px solid #10dc60; 
+  height:40px;
+  width:40px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  padding: 10px;
+}
+
+

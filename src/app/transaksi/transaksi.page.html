@@ -1,0 +1,75 @@
+<ion-header>
+    <ion-toolbar color="dark">
+      &nbsp;<img src="assets/icon/logo1.png" style="width: 30%; height: 30%;">
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-button fill="clear" (click)="paymentdetail()"><ion-icon name="arrow-round-back" slot="start"></ion-icon>Back</ion-button>
+
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      Please Tranfer To
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <h3>Account Number</h3>
+              <h2>900-00-3964085-0</h2>
+            </ion-col>
+
+            <ion-col offset="4">
+               <img src="assets/icon/mandiri.png" style="width: 70px; height: 30px;">
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <h3>Account Holder's Name</h3>
+              <h2>PT.TREVA</h2>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <h3>Total Price</h3>
+              <h2>Rp 180.890</h2>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <p>
+          Please transfer according to the amount stated </p>
+          <p>(Including the las 3 digits)</p>
+      </ion-label>
+    </ion-item>
+  </ion-card>  
+
+  <div class="ion-margin-vertical ion-text-center">
+    After completing payment, please confirm with us and we will print your ticket
+  </div>
+
+  <div class="ion-margin-vertical ion-text-center">
+      <ion-button fill="outline" color="dark" (click)="home()">
+            Finish
+      </ion-button>
+  </div>
+
+</ion-content>
